@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "merklesn_diffusion2d"
+authors = [
+    {name = "Simon Merkle", email = "st172506@stud.uni-stuttgart.de"}
+]
+description = "This code solves the diffusion equation over a two dimensional square domain which is at a certain temperature, and a circular disc at its center which is at a higher temperature. The diffusion equation is solved using the finite-difference method. The thermal diffusivity and initial conditions of the system can be changed by the user. The code produces four plots at various timepoints of the simulation. The diffusion process can be clearly observed in these plots."
+readme = "README.md"
+requires-python = ">=3.6"
+version = "0.0.1"
+
+dependencies = [
+   "numpy",
+   "matplotlib",
+]
+
+[project.urls]
+Repository = "https://github.com/Simulation-Software-Engineering/diffusion2D"
+
+[tool.setuptools]
+packages = ["merklesn_diffusion2d"]
